@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple code to print name</title>
+    </head>
+    <body>
+        First name:<br>
+            <input type="text" name="firstname" id="firstname">
+        <br>
+        Last name:<br>
+            <input type="text" name="lastname" id="lastname">
+        <br>
+            <input type="button" value="Send" onclick="MyFunction()">
+            <div id="here"></div>
+
+        <script>
+            MyFunction = function() {
+                var first, second;
+                first = document.getElementById("firstname").value;
+                second = document.getElementById("lastname").value;
+
+                document.getElementById("here").innerHTML = first+ " " +second;     
+            }
+        </script>        
+    </body>
+
